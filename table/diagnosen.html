@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Diagnosen</title>
+    <style>
+        span {
+            font-family: Montserrat;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <a href="" class="highlight">Diagnosen</a>
         <a href="medikation.html">Medikation</a>
         <a href="vitalparameter.html">Vitalparameter</a>
-        <a href="#">Labor</a>
-        <a href="#">Viralogie/Mikrobiologie</a>
+        <a href="#" class="inaccess">Labor</a>
+        <a href="#" class="inaccess">Viralogie/Mikrobiologie</a>
         <a href="befunde.html">Befunde</a>
         <a href="verlauf.html">Verlauf</a>
         <a href="#">Kitteltaschenliste</a>
         <a href="#">Entlassorganisation</a>
         <a href="#">Termine</a>
         <a href="#">Checkliste</a>
-        <a href="#">ANE</a>
+        <a href="#" class="inaccess">ANE</a>
     </nav>
+
+    <!-- <section>
+        <summary>
+            <p><span>Patient(in):</span>Teststationär, Mediconnect (22)
+            </p>
+            <p><span></span>* 01.01.2000
+            </p>
+            <p><span>Pat-Nr.:</span>4100018028
+            </p>
+            <p><span>Fall-Nr.:</span>0049026127
+            </p>
+            <p><span>Aufnahmestatus:</span>Aufnahmestatus vom 28.03.2022
+            </p>
+            <p><span>Aufnahmediagnose:</span>
+            </p>
+            <p><span>Letzte 2 Arztbriefe:</span>Arztbrief vom 18.05.2021 (KAR) Arztbrief vom 23.06.2020 (KAR)
+            </p>
+            <p><span>Nächste Termine:</span>
+            </p>
+            <p><span>Tel.Nr Angehörige:</span>
+            </p>
+            <p><span>Betreuung/Vorsorgevollmacht vorhanden:
+                </span>Vorhanden/bearbeiten
+            </p>
+            <p><span>Entlassdatum:
+                </span>01.02.2022
+            </p>
+            <p><span>Empfohlene Entlassart:</span>EV ext.Verleg.
+            </p>
+            <p><span>Allergien:</span>
+            </p>
+
+        </summary>
+        <aside>
+            <button>Akte</button>
+            <button>Alida</button>
+            <button>Pacs</button>
+            <button>ixserv</button>
+        </aside>
+    </section> -->
+
+    <div class="summary">
+
+        <div class="one"><span>Patient(in): </span>Teststationär, Mediconnect (22)</div>
+        <div class="two"><span></span>* 01.01.2000</div>
+        <div class="three"><span>Pat-Nr.: </span>4100018028</div>
+        <div class="four"><span>Fall-Nr.: </span>0049026127</div>
+        <div class="five"><span>Aufnahmestatus: </span>Aufnahmestatus vom 28.03.2022</div>
+        <div class="six"><span>Aufnahmediagnose: </span></div>
+        <div class="seven"><span>Letzte 2 Arztbriefe: </span>Arztbrief vom 18.05.2021 (KAR)
+            Arztbrief vom 23.06.2020 (KAR)
+        </div>
+        <div class="eight"><span>Nächste Termine: </span></div>
+        <div class="nine"><span>Entlassdatum: </span>01.02.2022</div>
+        <div class="ten"><span>Empfohlene Entlassart:</span>EV ext.Verleg.</div>
+        <div class="eleven"><span>Allergien: </span></div>
+        <div class="twelve"><span></span></div>
+        <div class="buttons">
+            <button><img src="assets/akte_02.png" alt="a folder"> Akte</button>
+            <button><img src="assets/alida.ico"> Alida</button>
+            <button><img src="assets/pacs_nz.ico" alt="pacs"> Pacs</button>
+            <button><img src="assets/ixserv.ico" alt="ixserv"> ixserv</button>
+        </div>
+    </div>
+
     <table>
         <tr>
             <th>Datum, Dok.-Art</th>
@@ -55,4 +129,5 @@
         </tr>
     </table>
 </body>
+
 </html>

@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/Montserrat-VariableFont_wght.ttf);
+}
 
 nav {
     display: flex;
@@ -18,17 +21,17 @@ nav {
 
 a {
     text-decoration: none;
-    color: #1C1C1C;
+    color: #1c1c1c;
     padding: 5px;
-    background-color: #BBDDDA;
+    background-color: #bbddda;
     margin: 5px;
     border-radius: 5px;
     text-align: center;
 }
 
 a:hover {
-    background-color: #6AB4AE;
-    color: #EDF6F9;
+    background-color: #6ab4ae;
+    color: #edf6f9;
 }
 
 a:active {
@@ -48,14 +51,18 @@ table {
 
 th {
     background-color: #006d77;
-    color: #EDF6F9;
+    color: #edf6f9;
+    font-family: Montserrat;
 }
 
-th, td {
+th,
+td {
     padding: 4px;
 }
 
-th, td, tr {
+th,
+td,
+tr {
     border: 0.5px solid #006d7796;
     border-style: dotted;
 }
@@ -89,7 +96,7 @@ th:nth-last-child(1) {
 }
 
 .title {
-    background-color: #6AB4AE;
+    background-color: #6ab4ae;
     color: white;
     font-weight: normal;
 }
@@ -99,7 +106,7 @@ div {
 }
 
 article {
-    background-color: #BBDDDA;
+    background-color: #bbddda;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -110,23 +117,32 @@ article {
     align-self: flex-start;
 }
 
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 15px;
+    background-color: #e8eaeb;
+    border-radius: 15px;
+}
+
 button {
     border: none;
     cursor: pointer;
     justify-self: center;
     align-self: center;
-    color: #1C1C1C;
-    background-color: #BBDDDA;
+    color: #1c1c1c;
+    background-color: #bbddda;
     border-radius: 5px;
     text-align: center;
     padding: 7px;
     font-size: 1.08em;
 }
 
-
 button:hover {
-    background-color: #6AB4AE;
-    color: #EDF6F9;
+    background-color: #6ab4ae;
+    color: #edf6f9;
 }
 
 button:active {
@@ -153,5 +169,107 @@ img {
 }
 
 .pencil:hover {
-    background-color: #6AB4AE;
+    background-color: #6ab4ae;
+}
+
+.inaccess {
+    cursor: not-allowed;
+}
+
+.inaccess:hover {
+    background-color: #528a85;
+    color: rgb(189, 189, 189);
+}
+
+/* grid */
+
+.summary {
+    display: grid;
+    margin: 15px;
+    border-radius: 15px;
+    border: 0.5px solid #006d7796;
+    border-style: dotted;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    overflow: initial;
+    grid-template-areas:
+        "one two three four buttons"
+        "five six seven eight buttons"
+        "nine ten eleven twelve buttons";
+}
+
+
+
+.buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.buttons img {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    margin: 0 15px 0 15px;
+}
+
+.buttons button {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+
+.summary div {
+    overflow: initial;
 }
