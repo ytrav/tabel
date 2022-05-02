@@ -47,6 +47,7 @@ body {
 
 table {
     padding: 15px;
+    width: 100%;
 }
 
 th {
@@ -102,7 +103,10 @@ th:nth-last-child(1) {
 }
 
 div {
-    overflow: auto;
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 article {
@@ -179,97 +183,4 @@ img {
 .inaccess:hover {
     background-color: #528a85;
     color: rgb(189, 189, 189);
-}
-
-/* grid */
-
-.summary {
-    display: grid;
-    margin: 15px;
-    border-radius: 15px;
-    border: 0.5px solid #006d7796;
-    border-style: dotted;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    overflow: initial;
-    grid-template-areas:
-        "one two three four buttons"
-        "five six seven eight buttons"
-        "nine ten eleven twelve buttons";
-}
-
-
-
-.buttons {
-    grid-area: buttons;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.buttons img {
-    width: 90px;
-    height: 90px;
-    border-radius: 15px;
-    margin: 0 15px 0 15px;
-}
-
-.buttons button {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.one {
-    grid-area: one;
-}
-
-.two {
-    grid-area: two;
-}
-
-.three {
-    grid-area: three;
-}
-
-.four {
-    grid-area: four;
-}
-
-.five {
-    grid-area: five;
-}
-
-.six {
-    grid-area: six;
-}
-
-.seven {
-    grid-area: seven;
-}
-
-.eight {
-    grid-area: eight;
-}
-
-.nine {
-    grid-area: nine;
-}
-
-.ten {
-    grid-area: ten;
-}
-
-.eleven {
-    grid-area: eleven;
-}
-
-
-.summary div {
-    overflow: initial;
 }
