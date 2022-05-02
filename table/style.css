@@ -1,0 +1,157 @@
+* {
+    /* border: 1px solid rgba(255, 0, 0, 0.575); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #1C1C1C;
+    padding: 5px;
+    background-color: #BBDDDA;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #6AB4AE;
+    color: #EDF6F9;
+}
+
+a:active {
+    background-color: #528a85;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #edf6f9;
+}
+
+table {
+    padding: 15px;
+}
+
+th {
+    background-color: #006d77;
+    color: #EDF6F9;
+}
+
+th, td {
+    padding: 4px;
+}
+
+th, td, tr {
+    border: 0.5px solid #006d7796;
+    border-style: dotted;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7e7e7cc;
+}
+
+th:nth-child(1) {
+    border-radius: 10px 0 0 0;
+}
+
+th:nth-last-child(1) {
+    border-radius: 0 10px 0 0;
+}
+
+tr:nth-last-child(1) td:nth-child(1) {
+    border-radius: 0 0 0 10px;
+}
+
+tr:nth-last-child(1) td:nth-last-child(1) {
+    border-radius: 0 0 10px 0;
+}
+
+img {
+    zoom: 30%;
+}
+
+th:nth-last-child(1) {
+    width: 0;
+}
+
+.title {
+    background-color: #6AB4AE;
+    color: white;
+    font-weight: normal;
+}
+
+div {
+    overflow: auto;
+}
+
+article {
+    background-color: #BBDDDA;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    color: #1C1C1C;
+    background-color: #BBDDDA;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+    font-size: 1.08em;
+}
+
+
+button:hover {
+    background-color: #6AB4AE;
+    color: #EDF6F9;
+}
+
+button:active {
+    background-color: #528a85;
+}
+
+
+span {
+    margin: 3px;
+}
+
+.highlight {
+    border: 1px solid #006d77;
+    box-sizing: content-box;
+}
+
+img {
+    cursor: pointer;
+}
+
+.pencil {
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.pencil:hover {
+    background-color: #6AB4AE;
+}
