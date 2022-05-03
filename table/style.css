@@ -137,6 +137,11 @@ summary {
     flex-wrap: wrap;
     margin: 15px;
     justify-content: space-around;
+    align-content: center;
+}
+
+summary tbody {
+    background-color: #f0fffd;
 }
 
 summary table:nth-child(1) tr:nth-child(1) td:nth-child(1) {
@@ -160,6 +165,15 @@ summary table:nth-child(2) tr:nth-child(1) td:nth-last-child(1) {
     border-radius: 0 10px 0 0;
 }
 
+table:nth-child(1) tr:nth-child(1) td:nth-child(1) {
+    border-radius: 10px 0 0 0;
+}
+
+table:nth-child(1) tr:nth-child(1) td:nth-last-child(1) {
+    border-radius: 0 10px 0 0;
+}
+
+
 summary table,
 summary tr {
     margin: 0;
@@ -167,11 +181,11 @@ summary tr {
 }
 
 summary table {
-    width: auto;
+    width: 50%;
 }
 
 summary td {
-    height: 50px;
+    height: 86px;
 }
 
 button {
@@ -230,12 +244,18 @@ img {
 @media only screen and (orientation: portrait) {
     table {
         padding: 0;
+        width: 100%;
     }
     summary {
         flex-direction: column;
         justify-content: center;
+        align-content: stretch;
         overflow-x: auto;
         margin: 15px 0 15px 0;
+    }
+
+    summary table {
+        width: auto;
     }
 
     summary table:nth-child(1) tr:nth-child(1) td:nth-child(1) {
@@ -257,7 +277,7 @@ img {
 
 
     summary td {
-        width: 50%;
+        width: 50% !important;
     }
 }
 
@@ -268,7 +288,7 @@ img {
 }
 @media only screen and (max-width: 410px) {
     summary td {
-        width: auto;
+        width: 50%;
     }
 }
 
