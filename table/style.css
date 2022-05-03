@@ -184,10 +184,6 @@ summary table {
     width: 50%;
 }
 
-summary td {
-    height: 86px;
-}
-
 button {
     border: none;
     cursor: pointer;
@@ -232,6 +228,7 @@ select {
     font-size: 0.9em;
     font-weight: bold;
     border: 0.5px solid #006d77;
+    margin: 0 0 0 7px;
 }
 option {
     font-family: Montserrat;
