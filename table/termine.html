@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Diagnosen</title>
+    <title>Termine</title>
 </head>
 
 <body>
     <nav>
-        <a href="" class="highlight">Diagnosen</a>
+        <a href="diagnosen.html">Diagnosen</a>
         <a href="medikation.html">Medikation</a>
         <a href="vitalparameter.html">Vitalparameter</a>
         <a href="#" class="inaccess">Labor</a>
@@ -20,7 +20,7 @@
         <a href="verlauf.html">Verlauf</a>
         <a href="kitteltaschenliste.html">Kitteltaschenliste</a>
         <a href="entlassorganisation.html">Entlassorganisation</a>
-        <a href="termine.html">Termine</a>
+        <a href="" class="highlight">Termine</a>
         <a href="#">Checkliste</a>
         <a href="#" class="inaccess">ANE</a>
     </nav>
@@ -94,24 +94,85 @@
         <table>
             <tbody>
                 <tr>
-                    <th>Datum, Dok.-Art</th>
-                    <th>Diagnose(n)</th>
+                    <th>Typ <select name="typ" id="typ">
+                        <option value="alle">
+                            Alle
+                        </option>
+                        <option value="klat">
+                            KLAT
+                        </option>
+                        <option value="termin">
+                            Termin
+                        </option>
+                    </select></th>
+                    <th>Datum</th>
+                    <th>Zeit</th>
+                    <th>OE</th>
+                    <th>Info zu storniertem Termin</th>
+                    <th></th>
                     <th></th>
                 </tr>
                 <tr>
-                    <td>28.03.2022, aus Aufnahme-Status</td>
+                    <td>KLAT-Angenommen</td>
+                    <td>27.01.2022</td>
+                    <td>10:00 (Wunsch)</td>
+                    <td>KAR Echokardiographie</td>
                     <td></td>
-                    <td><img src="assets/book.png" alt="a book"></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>25.03.2022, aus Sozialdienstdok.</td>
+                    <td>Termin</td>
+                    <td>27.11.2020</td>
+                    <td>07:38</td>
+                    <td>RAD Röntgendiagnostik K 5</td>
                     <td></td>
-                    <td><img src="assets/book.png" alt="a book"></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td><img src="assets/pencil.png" alt="a pencil"></td>
                 </tr>
                 <tr>
-                    <td>01.02.2022, aus Kitteltasche</td>
-                    <td>asdf</td>
-                    <td><img src="assets/book.png" alt="a book"></td>
+                    <td>Termin</td>
+                    <td>16.11.2020</td>
+                    <td>10:26</td>
+                    <td>RAD Röntgendiagnostik K 5</td>
+                    <td></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td><img src="assets/pencil.png" alt="a pencil"></td>
+                </tr>
+                <tr>
+                    <td>Termin</td>
+                    <td>16.11.2020</td>
+                    <td>10:26</td>
+                    <td>RAD Röntgendiagnostik K 5</td>
+                    <td></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td><img src="assets/pencil.png" alt="a pencil"></td>
+                </tr>
+                <tr>
+                    <td>KLAT-Befundet</td>
+                    <td>26.06.2020</td>
+                    <td>11:30 (Wunsch)</td>
+                    <td>KAR Arrhythmie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Termin</td>
+                    <td>22.06.2020</td>
+                    <td>9:15</td>
+                    <td>KAR Arrhythmie</td>
+                    <td></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td><img src="assets/pencil.png" alt="a pencil"></td>
+                </tr>
+                <tr>
+                    <td>Termin</td>
+                    <td>16.11.2020</td>
+                    <td>10:26</td>
+                    <td>RAD Röntgendiagnostik K 5</td>
+                    <td></td>
+                    <td><img src="assets/search.png" alt="a magnifying glass"></td>
+                    <td><img src="assets/pencil.png" alt="a pencil"></td>
                 </tr>
                 <tr>
                     <td>18.05.2021, aus Arztbrief 3</td>

@@ -225,6 +225,19 @@ span {
     box-sizing: content-box;
 }
 
+select {
+    border-radius: 6px;
+    background-color: #f0fffd;
+    font-family: Montserrat;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 0.5px solid #006d77;
+}
+option {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
 img {
     cursor: pointer;
 }
