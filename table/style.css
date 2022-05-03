@@ -131,6 +131,27 @@ section {
     border-radius: 15px;
 }
 
+
+summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+summary table, summary tr {
+    margin: 0;
+    padding: 0;
+}
+
+summary table {
+    width: auto;
+}
+
+summary td {
+    height: 50px;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -183,4 +204,35 @@ img {
 .inaccess:hover {
     background-color: #528a85;
     color: rgb(189, 189, 189);
+}
+
+
+@media only screen and (orientation: portrait) {
+    summary {
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: auto;
+        margin: 15px 0 15px 0;
+    }
+    
+    summary td {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    table:nth-child(1) tr:nth-child(6) span {
+        word-break: break-word;
+    }
+}
+@media only screen and (max-width: 410px) {
+    summary td {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    span {
+        font-size: 0.8em;
+    }
 }
