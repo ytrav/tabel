@@ -61,6 +61,10 @@ td {
     padding: 4px;
 }
 
+tr:hover {
+    background-color: #bbddda9d !important;
+}
+
 th,
 td,
 tr {
@@ -86,6 +90,15 @@ tr:nth-last-child(1) td:nth-child(1) {
 
 tr:nth-last-child(1) td:nth-last-child(1) {
     border-radius: 0 0 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: #006d77 1px solid;
+    border-style: none none solid none;
+    font-size: 1.1em;
+    background-color: transparent;
+    margin: 0;
 }
 
 img {
@@ -153,13 +166,12 @@ summary table:nth-child(1) tr:nth-last-child(1) td:nth-child(1) {
 }
 
 summary table:nth-child(2) tr:nth-child(1) td:nth-child(1) {
-    border-radius: 10px 0 0 0 ;
+    border-radius: 10px 0 0 0;
 }
 
 summary table:nth-child(2) tr:nth-last-child(1) td:nth-last-child(1) {
     border-radius: 0 0 10px 0;
 }
-
 
 summary table:nth-child(2) tr:nth-child(1) td:nth-last-child(1) {
     border-radius: 0 10px 0 0;
@@ -172,7 +184,6 @@ table:nth-child(1) tr:nth-child(1) td:nth-child(1) {
 table:nth-child(1) tr:nth-child(1) td:nth-last-child(1) {
     border-radius: 0 10px 0 0;
 }
-
 
 summary table,
 summary tr {
@@ -210,6 +221,65 @@ span {
     margin: 3px;
 }
 
+.checkcontainer {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+.checkcontainer + .checkcontainer {
+    margin-top: 1em;
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: transparent;
+    /* Not removed via appearance */
+    margin: 0;
+
+    font: inherit;
+    color: #006d77;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid #006d77;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em black;
+    /* Windows High Contrast Mode */
+    background-color: #006d77;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline: max(1px, 0.1em) solid #006d77;
+    outline-offset: max(1px, 0.1em);
+}
+
+
+
 .high {
     font-family: Montserrat;
     font-weight: bold;
@@ -228,7 +298,7 @@ select {
     font-size: 0.9em;
     font-weight: bold;
     border: 0.5px solid #006d77;
-    margin: 0 0 0 7px;
+    margin: 5px 0 0 7px;
 }
 option {
     font-family: Montserrat;
@@ -289,8 +359,6 @@ img {
     summary table:nth-child(2) tr:nth-last-child(1) td:nth-last-child() {
         border-radius: 0 0 10px 0;
     }
-
-
 
     summary td {
         width: 50% !important;
