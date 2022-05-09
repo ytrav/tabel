@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        div {
+            overflow-x: visible;
+            width: initial;
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+        }
+    </style>
+    <title>Anmelden</title>
+</head>
+
+<body>
+    <main>
+        <form action="signin">
+            <div>
+                <h2>Anmelden</h2>
+                <h3>Visitenübersicht</h3>
+            </div>
+            <div>
+                <input name="username" id="username" type="text" placeholder="Benutzername" required autofocus
+                    autocomplete="nickname">
+                <input name="password" id="password" type="password" placeholder="Passwort" required
+                    autocomplete="current-password">
+            </div>
+            <button type="submit">Weiter</button>
+        </form>
+    </main>
+</body>
+
+</html>

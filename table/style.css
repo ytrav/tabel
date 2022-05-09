@@ -92,7 +92,7 @@ tr:nth-last-child(1) td:nth-last-child(1) {
     border-radius: 0 0 10px 0;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     width: 100%;
     border: #006d77 1px solid;
     border-style: none none solid none;
@@ -278,8 +278,6 @@ input[type="checkbox"]:focus {
     outline-offset: max(1px, 0.1em);
 }
 
-
-
 .high {
     font-family: Montserrat;
     font-weight: bold;
@@ -383,5 +381,61 @@ img {
     * {
         margin: 0;
         padding: 0;
+    }
+}
+
+
+
+/* Sign in/Anmelden */
+
+main {
+    border: #006d77 1px solid;
+    background-color: #faffff;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+}
+
+h2, h3 {
+    text-align: center;
+    justify-self: flex-start;
+    font-family: Montserrat;
+    margin: 5px 0 5px 0;
+}
+/* 
+main input {
+    margin: 5px 0 5px 0 !important; 
+} */
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+button[type="submit"] {
+    width: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+main form div:nth-child(2) input {
+    margin: 10px 0 10px 0;
+}
+
+@media only screen and (orientation: portrait) {
+    main {
+        background-color: #edf6f9;
+        border: none;
+        overflow: hidden;
+
+    }
+    body {
+        overflow: hidden;
+    }
+    main div {
+        overflow: hidden;
     }
 }
