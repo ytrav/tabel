@@ -325,6 +325,11 @@ img {
     color: rgb(189, 189, 189);
 }
 
+::selection {
+    background-color: #6ab4ae;
+    color: white;
+}
+
 @media only screen and (orientation: portrait) {
     table {
         padding: 0;
