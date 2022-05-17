@@ -16,7 +16,7 @@ var info1 = document.getElementById("info1"),
 
 function test(info, value) {
     info.innerHTML = value;
-    return;
+    return "changed the value to " + value;
 }
 
 
