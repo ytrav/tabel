@@ -24,7 +24,7 @@ function test(info, value) {
 // later could be replaced with an XHTTP request or something, to parse a local file
 
 var parser, xmlDoc;
-var text = "<info><patient><name>Mediconnect</name><surname>Teststationär</surname><age>22</age><birthday>01.01.2000</birthday></patient><aufnahmestatus>Aufnahmestatus vom 28.03.2022</aufnahmestatus><telnrangehoerige>—</telnrangehoerige><entlassdatum>01.02.2022</entlassdatum><aufnahmediagnose>—</aufnahmediagnose><betreuung>Vorhanden/bearbeiten</betreuung><patnr>4100018028</patnr><fallnr>0049026127</fallnr><letzte2arztbriefe>Arztbrief vom 18.05.2021 (KAR)\nArztbrief vom 23.06.2020 (KAR)</letzte2arztbriefe><allergien>—</allergien><naechstetermine>—</naechstetermine><empfohleneentlassart>EV ext.Verleg.</empfohleneentlassart></info>"
+var text = "<info><patient><name>Mediconnect</name><surname>Teststationär</surname><age>22</age><birthday>01.01.2000</birthday></patient><aufnahmestatus>Aufnahmestatus vom 28.03.2022</aufnahmestatus><telnrangehoerige>—</telnrangehoerige><entlassdatum>01.02.2022</entlassdatum><aufnahmediagnose>—</aufnahmediagnose><betreuung>Vorhanden/bearbeiten</betreuung><patnr>4100018028</patnr><fallnr>0049026127</fallnr><letzte2arztbriefe>Arztbrief vom 18.05.2021 (KAR)\nArztbrief vom 23.06.2020 (KAR)</letzte2arztbriefe><allergien>—</allergien><naechstetermine>—</naechstetermine><empfohleneentlassart>EV ext.Verleg.</empfohleneentlassart></info>";
 
 // Parser parsing
 parser = new DOMParser();
